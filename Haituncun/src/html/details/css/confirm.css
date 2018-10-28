@@ -1,0 +1,100 @@
+
+
+/*自己定义的模态框*/
+.model_bg{
+
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #666;
+    opacity: 0.3;
+    z-index: 1;
+    display: none;
+}
+.my_model{
+    position: fixed;
+    display: none;
+    top:50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -200px;
+    z-index: 9999;
+    width: 360px;
+    height: 120px;
+    border: 1px solid #aeaeae;
+    border-radius: 3px;
+    padding: 20px;
+    background: #fff;
+}
+.my_model .title{
+    font-size: 14px;
+    color: #3c3c3c;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.my_model .title .closeModel{
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    background: #ddd;
+    float: right;
+    cursor: pointer;
+}
+.my_model p{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 30px;
+}
+.my_model .opBtn{
+    margin-top: 20px;
+}
+.my_model .opBtn a{
+    width: 58px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -ms-border-radius: 1px;
+    border-radius: 1px;
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.my_model .dialog-sure{
+    display: inline-block;
+    width: 160px;
+    height: 36px;
+    cursor: pointer;
+    background: #f60;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #f80;
+}
+.my_model .dialog-sure:hover{
+    background: #f30;
+}
+
+.my_model .dialog-close{
+    display: inline-block;
+    width: 160px;
+    height: 36px;
+    cursor: pointer;
+    background: #eee;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: #000;
+}
+.my_model .dialog-close:hover{
+    background: #bbb;
+}

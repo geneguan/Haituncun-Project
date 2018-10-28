@@ -1,0 +1,233 @@
+#header {
+  height: 138px;
+}
+#header .header {
+  height: 138px;
+}
+#header .header .headerUp {
+  height: 29px;
+  background: #FAFAFA;
+  border-bottom: 1px solid #EEEEEE;
+}
+#header .header .headerUp .headerupLeft {
+  height: 29px;
+}
+#header .header .headerUp .headerupLeft span {
+  display: block;
+  height: 29px;
+  font-size: 12px;
+  color: #787878;
+  line-height: 29px;
+}
+#header .header .headerUp .headerupRight {
+  height: 29px;
+}
+#header .header .headerUp .headerupRight li {
+  float: left;
+  height: 29px;
+  background: url(../images/hur_gd.png) no-repeat center right;
+}
+#header .header .headerUp .headerupRight li.last {
+  background: none;
+}
+#header .header .headerUp .headerupRight li.sjm {
+  position: relative;
+}
+#header .header .headerUp .headerupRight li.sjm img {
+  display: none;
+  border: 1px solid #ddd;
+  position: absolute;
+  left: -50px;
+  top: 25px;
+  z-index: 1;
+}
+#header .header .headerUp .headerupRight li.sjm:hover img {
+  display: block;
+  border-top: none;
+}
+#header .header .headerUp .headerupRight li a {
+  display: block;
+  height: 29px;
+  font-size: 12px;
+  color: #787878;
+  line-height: 29px;
+  margin: 0 12px;
+}
+#header .header .headerUp .headerupRight li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+#header .header .headerDown {
+  height: 108px;
+}
+#header .header .headerDown .headerdownAll {
+  height: 82px;
+}
+#header .header .headerDown .headerdownAll .logo {
+  width: 304px;
+  height: 82px;
+}
+#header .header .headerDown .headerdownAll .service {
+  width: 295px;
+  height: 30px;
+  margin: 34px 10px 0 0;
+}
+
+#main {
+  height: 628px;
+  background: #4EC6F8;
+}
+#main .main {
+  height: 628px;
+  background: url(../images/bg.jpg) no-repeat left center;
+}
+#main .main .loginBox {
+  width: 386px;
+  height: 410px;
+  background: #FFF;
+  margin-top: 129px;
+  z-index: 2;
+}
+#main .main .loginBox .loginHeader {
+  height: 30px;
+  width: 340px;
+  padding: 20px 30px 0 30px;
+  margin-bottom: 20px;
+}
+#main .main .loginBox .loginHeader div {
+  height: 30px;
+  width: 340px;
+}
+#main .main .loginBox .loginHeader div h1 {
+  float: left;
+  width: 100px;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 900;
+}
+#main .main .loginBox .loginHeader div span {
+  float: right;
+  width: 135px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+#main .main .loginBox .loginHeader div span a {
+  font-size: 14px;
+  color: #009DE0;
+}
+#main .main .loginBox .loginHeader div span a:hover {
+  text-decoration: underline;
+}
+#main .main .loginBox .loginBody {
+  height: 230px;
+  width: 340px;
+  padding: 0px 30px;
+  position: relative;
+}
+#main .main .loginBox .loginBody input {
+  width: 188px;
+  height: 36px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 36px;
+  color: #666;
+  padding: 0 70px;
+  margin-top: 25px;
+}
+#main .main .loginBox .loginBody .icon1 {
+  height: 36px;
+  width: 48px;
+  border: 1px solid #999;
+  border-radius: 5px 0 0 5px;
+  position: absolute;
+  left: 30px;
+  top: 25px;
+  background: #F5F5F5;
+}
+#main .main .loginBox .loginBody .icon1 img {
+  margin: 8px 0px 0px 15px;
+}
+#main .main .loginBox .loginBody .icon2 {
+  height: 36px;
+  width: 48px;
+  border: 1px solid #999;
+  border-radius: 5px 0 0 5px;
+  position: absolute;
+  left: 30px;
+  top: 88px;
+  background: #F5F5F5;
+}
+#main .main .loginBox .loginBody .icon2 img {
+  margin: 8px 0px 0px 15px;
+}
+#main .main .loginBox .loginBody #checkbox {
+  width: 15px;
+  height: 15px;
+  margin: 0px 10px 0px 20px;
+}
+#main .main .loginBox .loginBody p {
+  display: inline-block;
+  width: 256px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+#main .main .loginBox .loginBody p a {
+  font-size: 14px;
+  color: #4EC6F8;
+  font-weight: 900;
+  float: right;
+}
+#main .main .loginBox .loginBody p a:hover {
+  color: #009DE0;
+}
+#main .main .loginBox .loginBody #loginBtn {
+  display: block;
+  width: 330px;
+  height: 45px;
+  font-size: 16px;
+  color: #FFF;
+  font-weight: 900;
+  background: #009DE0;
+  padding: 0;
+  cursor: pointer;
+}
+#main .main .loginBox .loginBody #loginBtn:hover {
+  background: #0086D4;
+}
+#main .main .loginBox .loginBody .miShow {
+  width: 20px;
+  height: 18px;
+  border-radius: 0 5px 5px 0;
+  padding: 7px 10px;
+  cursor: default;
+  position: absolute;
+  right: 40px;
+  top: 89px;
+}
+#main .main .loginBox .loginFooter {
+  height: 50px;
+  margin: 60px 0 0 34px;
+}
+
+#footer {
+  height: 108px;
+}
+#footer .footer {
+  height: 36px;
+  width: 490px;
+  padding: 48px 250px 24px 250px;
+}
+#footer .footer p {
+  width: 490px;
+  height: 36px;
+  font-size: 12px;
+  line-height: 36px;
+  color: #666;
+  text-align: center;
+}
+#footer .footer p a {
+  color: #666;
+}
+
+/*# sourceMappingURL=login.css.map */

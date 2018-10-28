@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>海豚村-注册页</title>
+        <link rel="stylesheet" type="text/css" href="css/base.css" />
+        <link rel="stylesheet" type="text/css" href="css/reg.css" />
+        <script src="js/jquery-1.10.1.min.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/reg.js"></script>
+    </head>
+    <body>
+        <header id="header">
+            <header class="header">
+                <div class="headerUp">
+                    <div class="hUp con">
+                        <p class="headerupLeft fl">
+                            <span>您好，欢迎来到海豚村！</span>
+                        </p>
+                        <ul class="headerupRight fr">
+                            <li><a href="../login/index.html" target="_Blank">登录</a></li>
+                            <li><a href="">注册</a></li>
+                            <li class="sjm">
+                                <a href="#">手机版</a>
+                                <img src="images/sjm.png" height="196" width="159" alt="" />
+                            </li>
+                            <li><a href="#">关注</a></li>
+                            <li class="last"><a href="#">在线客服</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="headerDown con">
+                    <div class="headerdownAll">
+                        <div class="logo fl">
+                           <a href="../../index.html" target="_Blank"><img src="images/logo.png" height="82" width="304" title="海豚村" /></a>
+                        </div>
+                        <div class="service fr">
+                            <a href="#"><img src="images/svc.png" height="30" width="295" title="服务承诺" /></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </header>
+
+        <main id="main">
+            <main class="main con">
+                <div class="regBox fr">
+                    <div class="regHeader">
+                        <div>
+                            <h1>新用户注册</h1>
+                            <span>已有账号？<a href="../login/index.html">立即登录</a></span>
+                        </div>
+                    </div>
+                    <div class="regBody">
+                        <form>
+                            <label for="username">用 户 名：</label><input type="text" id="username" required placeholder="设置用户名" /><br />
+                            <label for="password">设置密码：</label><input type="password" id="password" required placeholder="数字、字母或下划线" /><br />
+                            <div class="miShow1">
+                                <img src="images/mi_2.png" height="18" width="20" alt="" />
+                            </div>
+                            <label for="passwordAgain">确认密码：</label><input type="password" id="passwordAgain" required placeholder="确认设置的密码" /><br />
+                            <div class="miShow2">
+                                <img src="images/mi_2.png" alt="" />
+                            </div>
+                            <label for="code">验 证 码：</label><input type="text" id="code" required placeholder="输入验证码" /><br />
+                            <!-- 显示随机验证码 -->
+                            <div class="codeShow">
+                                
+                            </div>
+                            <input type="checkbox" id="checkbox" checked="checked" /><p>我已阅读并同意<a href="#">《服务条款》</a>及<a href="#">《隐私条款》</a></p><br />
+                            <input type="button" id="regBtn" value="立即注册"/>
+                        </form>
+                    </div>
+                    <div class="regFooter">
+                        <a href="#"><img src="images/reg_footer.png" height="50" width="400" alt="" /></a>
+                    </div>
+                </div>
+            </main>
+        </main>
+
+        <footer id="footer">
+            <footer class="footer con">
+                <p>COPYRIGHT © 2013-2018 All Rights Reserved. <a href="#">粤ICP备 13081207号</a></p>
+            </footer>
+        </footer>
+    </body>
+</html>
