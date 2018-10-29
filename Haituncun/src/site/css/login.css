@@ -1,0 +1,157 @@
+
+        #header{
+            height: 82px;
+            border-bottom: 5px solid red;
+        }
+        #header .area{
+            height:77px;        
+        }
+        #header .area .juan-logo-denglu{
+            display:block;
+            width: 210px;
+            height: 53px;
+            float:left;
+            background:url(../img/logo_user.png) no-repeat center center;
+            margin-top:15px;
+        }
+        #header .area{
+            width: 980px;
+        }
+        #denglubody{
+            width:100%;
+            height: 573px;
+            background:#ffffff;
+        }
+        #denglubody .login_center{
+            width: 980px;
+            height: 573px;
+            background:#ffffff;
+        }
+        #denglubody .login_center .login_title{
+            border:1px solid grey;
+            margin-top:20px;
+        }
+
+        #denglubody .login_center .denglubox{
+            border:1px solid grey;
+            width: 980px;
+            height: 390px;
+        } 
+
+        #denglubody .login_center .login_title .login_hd{
+            margin-left:20px;
+            display:inline-block;
+            font-size:14px;
+            color:red;
+            height: 65px;
+            width: 100px;
+            line-height: 65px;
+        }
+        #denglubody .login_center .login_title .login_tips{
+            display:inline-block;
+            font-size:12px;
+            color:grey;
+            height: 65px;
+            width: 186px;
+            line-height: 65px;
+        }
+        #denglubody .login_center .login_title .login_other{
+            display:inline-block;
+            font-size:12px;
+            color:grey;
+            height: 65px;
+            width: 186px;
+            line-height: 65px;
+            float:right;
+        }
+        #denglubody .login_center .user_login{
+            height: 320px;
+            width: 450px;
+            background: #ffffff;
+            float:left;
+            margin:20px 0 0 80px;
+        }
+        #denglubody .login_center .user_login .form .form-group .img_box{
+            display:inline-block;
+            width: 39px;
+            float:left;
+            margin-left:100px;
+            border:1px solid grey;
+        }
+        #denglubody .login_center .user_login .form .form-group{
+            float:left;
+            width: 450px;
+            height: 39px;
+            margin:15px 0px;
+        }
+        #username{
+            display:inline-block;
+            float:right;
+            margin-right:80px;
+            width: 231px;
+            height: 38px;
+        }
+        #password{
+            display:inline-block;
+            float:right;
+            margin-right:80px;
+             width: 231px;
+            height: 38px;
+        }
+        #cfpassword{
+            display:inline-block;
+            float:right;
+            margin-right:80px;
+            width: 231px;
+            height: 38px;
+
+        }
+        .miandeng{
+            height: 38px;
+            width: 231px;
+            float:left;
+            margin-left:100px;
+            margin-top:10px;
+        }
+        .miandeng>span{
+            display:inline-block;
+            float:right;
+        }
+        .btn-danger{
+            background: red;
+            width: 260px;
+            height: 38px;
+            margin-left:100px;
+        }
+        .kuaijie{
+            width: 266px;
+            height: 55px;
+            margin-left:100px;
+            background: url(../img/kuaijie.png) no-repeat center center;
+        }
+        .kuaijie_a{
+            height:55px;
+            width: 124px;
+            float:right;
+        }
+
+        #denglubody .login_center .bgImg{
+            width: 349px;
+            height: 247px;
+            float:right;
+            margin:20px 80px 0 0;
+        }
+        .foot-tips {
+            float:right;
+            text-align: center;
+            margin:40px 0px;
+            width: 900px;
+            font-size:12px;
+        }
+        .ft-company{
+            float:right;
+            text-align: center;
+           
+            width: 900px;
+            font-size:12px;
+        }

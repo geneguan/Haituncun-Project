@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>卷皮网用户登录</title>
+       <!--  <link rel="stylesheet" type="text/css" href="../css/" /> -->
+        <link rel="stylesheet" type="text/css" href="../css/index.css" />
+        <link rel="stylesheet" type="text/css" href="../css/base.css" />
+        <link rel="stylesheet" type="text/css" href="../css/login.css" />
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+        <script src="../js/jquery-3.2.1.js" type="text/javascript"></script>
+         <script src="../js/index.js" type="text/javascript"></script>
+         <script src="../js/denglu.js" type="text/javascript"></script>
+         <script src="../js/verify.js" type="text/javascript"></script>
+         <script type="text/javascript">
+            $(function(){
+                $('#mpanel2').codeVerify({
+                    type : 1,
+                    width : '100px',
+                    height : '50px',
+                    fontSize : '30px',
+                    codeLength : 4,
+                    btnId : 'check-btn',
+                    ready : function() {
+                    },
+                    success : function() {
+                        alert('验证匹配！');
+                    },
+                    error : function() {
+                        alert('验证码不匹配！');
+                    }
+                });
+            })
+
+
+
+
+         </script>
+         <style type="text/css">
+            .yan{
+                width: 320px;
+                height: 50px;
+                float:left;
+                margin-left:100px;
+                position: relative;
+
+            }
+            .verify-code{
+                
+               /* float:right;*/
+                height: 40px;
+                width: 100px;
+                margin-left:150px;
+
+            }
+            .varify-input-code{
+                height: 40px;
+                width: 150px;
+                border:1px solid grey;
+                float:right;
+                position:absolute;
+                left:0px;
+                top:0px;
+            }
+            .verify-change-area{
+                position: absolute;
+                right:0px;
+                top:20px;
+            }
+
+
+         </style>
+    </head>
+    
+    <body>
+        <header id="header">
+            <div class="area con"> 
+            <a class="juan-logo-denglu fl" href="" title="卷皮首页"> 
+             <div class="logo logo1"> 
+              <div class="fl">
+               <span class="juan-txt fl"></span>
+              </div> 
+             </div>
+            </a> 
+
+            <div class="protection"> 
+             <a class="pro_a1" title="每天10点开抢" class="update" href="" target="_blank" rel="nofollow"></a> 
+             <a class="pro_a1" title="职业买手砍价" class="lowest" href="" target="_blank" rel="nofollow"></a> 
+             <a class="pro_a1" title="商品验货质检" class="check1" href="" target="_blank" rel="nofollow"></a> 
+            </div> 
+            </div> 
+        </header>
+
+
+
+        <main id="denglubody">
+            <div class="login_center con">
+                <div class="login_title">
+                    <span class="login_hd">老用户登录</span>
+                    <span class="login_tips">尊敬的卷皮用户，欢迎您回来！</span>
+                    <p class="login_other">还没账号？<a href="zhuce.html" rel="nofollow">立即去注册</a>
+                    </p>
+                </div>
+                
+
+                <div class="denglubox">
+                <div class="user_login">
+                    <div class="form">
+                        <div class="form-group">
+                            <label for="username"><div class="img_box"><img src="../img/user_img.png" alt="" /></div></label>
+                            <input type="text" id="username" name="username" class="form-control" placeholder="请输入手机号">
+                            <span class="glyphicon glyphicon-remove form-control-feedback sr-only"></span>
+                            <span class="help-block"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password"><div class="img_box"><img src="../img/user_password.png" alt="" /></div></label>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="请输入密码">
+                        </div>
+                        <div class="form-group">
+                            <div class="yan">
+                                <label>
+                                    <div id="mpanel2" ></div>
+                                    <!-- <span id="sry">验证码:</span> -->
+                                </label>
+                                
+                            </div>
+                        </div>
+                        <div class="miandeng">
+                            <input id="mian" type="checkbox" /><label for="mian">七天免登陆</label>
+                            <span><a href="">忘了密码？</a></span>
+                        </div>
+                        <button id="check-btn" class="btn btn-danger btnLogin verify-btn">登录</button>
+                        <div class="kuaijie">
+                            <a class="kuaijie_a" href=""></a>
+                        </div>
+                    </div>
+                                
+                </div>
+                
+
+                <div class="bgImg">
+                    <img src="../img/dengluimg.png" alt="" />
+                </div>
+                </div>
+
+                <p class="foot-tips">武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 | <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=42018502000390" target="_blank">鄂公网安备42018502000390号</a> | 食品流通许可证 SP4201991510041888</p>
+                <p class="ft-company" style="padding-top:2px;">Copyright © 2010 - 2018 JuanPi.com All Rights Reserved</p>
+            </div>
+
+            
+        </main>
+    </body>
+</html>

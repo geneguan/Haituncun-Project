@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2018-10-28 19:58:32
+Date: 2018-10-29 10:14:04
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -31,9 +31,8 @@ CREATE TABLE `cart` (
 -- ----------------------------
 -- Records of cart
 -- ----------------------------
-INSERT INTO `cart` VALUES ('4', 'Sambucol 黑接骨木糖浆 4瓶', '¥256.00', 'https://assets.haituncun.com/media/catalog/product/a/a/aaa16002x2_3.jpg?imageView2/0/w/800/h/800', '2');
-INSERT INTO `cart` VALUES ('1', 'Ostelin 婴幼儿维生素D滴剂', '¥198.00', 'https://assets.haituncun.com/media/catalog/product/f/b/fbaauspl30010004x4.jpg?imageView2/0/w/800/h/800', '3');
-INSERT INTO `cart` VALUES ('8', 'Vitabiotics 钙镁锌液体钙 4瓶', '¥179.00', 'https://assets.haituncun.com/media/catalog/product/a/a/aaa21103x4_1.jpg?imageView2/0/w/800/h/800', '2');
+INSERT INTO `cart` VALUES ('2', 'ChildLife 儿童紫锥菊滴剂 2*29.6ml/瓶', '¥109.90', 'https://assets.haituncun.com/media/catalog/product/f/b/fbahkspl30020045x2.jpg?imageView2/0/w/800/h/800', '1');
+INSERT INTO `cart` VALUES ('8', 'Vitabiotics 钙镁锌液体钙 4瓶', '¥179.00', 'https://assets.haituncun.com/media/catalog/product/a/a/aaa21103x4_1.jpg?imageView2/0/w/800/h/800', '1');
 
 -- ----------------------------
 -- Table structure for goodslist

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>商品列表页</title>
+    </head>
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <script src="../js/common.js" type="text/javascript"></script>
+    <script src="../js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="../js/index.js" type="text/javascript"></script>
+    <script src="../js/liebiaoye.js" type="text/javascript"></script>
+    
+    <style type="text/css">
+        .xiding1{
+            /*z-index: 888;*/
+            width: 100%;
+            height: 50px;
+            background: #fff;
+            /*position:fixed;*/
+           /* display:none;*/
+            /*top:0px;*/
+        }
+
+        .xiding1 .xiding1_nav .xiding1_first>a{
+            color:red;
+
+        }
+        .xiding1 .xiding1_nav>li{
+            width: 58px;
+            height: 50px;
+            float:left;
+            font-size:12px;
+            margin-right:10px;
+            line-height: 50px;
+        }
+
+        .bodybox{
+            
+            background: pink;
+        }
+
+
+
+    </style>
+
+    <script type="text/javascript">
+        $(function(){
+            window.onscroll=function(){
+                // console.log(777);
+                if(window.scrollY>=400){
+                    $('.xiding1').css('z-index','888');
+                    $('.xiding1').css('position','fixed');
+                    $('.xiding1').css('top','0px');
+                }
+                else{
+                    $('.xiding1').css('top','155px');
+                    $('.xiding1').css('position','absolute');
+                }
+
+            }
+
+        })
+    </script>
+    <body>
+
+    <!-- 登录注册 -->
+     <div id="headbar">
+        <div class="headbar1 con">
+            <div class="right-show fr">
+
+               <div class="login-show">
+                    <a class="login-show-a" href="denglu.html">登录</a>
+                    <a class="login-show-a" href="zhuce.html" rel="nofollow" id="nav-reg">免费注册</a>　|
+                    <a class="login-show-a" href="#" rel="nofollow">我的订单</a>&nbsp;
+                    <a class="login-show-a" href="#" rel="nofollow">商家入驻</a>&nbsp;
+               </div>
+
+               <div class="bag-show">
+                    <a href="#" class="bag-a">
+                        <span class="icon-normal icon-bag fl"></span>
+                        <span class="empty fl">
+                        <span class="fl"><a class="goodsche_a" href="gouwuche.html">购物袋</a></span>
+                        <em class="num cartnum">0</em>
+                        </span>
+                    </a>
+                    <div class="bag-tool" style="display:none;">
+                     <div id="loadingimg" style="display:none"></div>
+                    </div>　|
+               </div>
+
+               <div class="other-show other-show01">
+                    <a class="normal-box01-a" href="#" target="_blank" rel="nofollow">商家中心</a>
+               </div>
+
+               <div class="other-show other-show01">
+                <a class="show01a">客户服务
+
+
+                <div class="normal-box01">
+                 <ul>
+                  <li><a href="#" target="_blank" rel="nofollow">帮助中心</a></li>
+                  <li><a href="#" target="_blank" rel="nofollow">联系客服</a></li>
+                 </ul>
+                </div>
+
+                </a>
+
+               </div>
+          </div>
+        </div>
+    </div>
+    <!-- 头部 -->
+     <header id="header">
+        <!-- logo搜索区 -->
+        <div class="area con"> 
+            <a class="juan-logo fl" href="../index.html" title="卷皮首页"> 
+             <div class="logo logo1"> 
+              <div class="fl">
+               <span class="juan-txt fl"></span>
+              </div> 
+             </div>
+            </a> 
+
+            <div class="protection"> 
+             <a class="pro_a1" title="每天10点开抢" class="update" href="" target="_blank" rel="nofollow"></a> 
+             <a class="pro_a1" title="职业买手砍价" class="lowest" href="" target="_blank" rel="nofollow"></a> 
+             <a class="pro_a1" title="商品验货质检" class="check1" href="" target="_blank" rel="nofollow"></a> 
+            </div> 
+
+            <div class="search"> 
+             <span class="search-area fl">
+                <input type="text" name="keywords" id="keywords" class="txt" value="请输入想找的宝贝" title="请输入想找的宝贝" />
+             </span> 
+             <input type="submit" value="" class="smt fr" /> 
+             
+            </div> 
+
+            <img class="banner-right-code" style="display:block;" src="" /> 
+        </div> 
+        <!-- 导航条 -->
+        <div class="mainNav con"> 
+            <div class="nav"> 
+                 <ul class="navigation fl"> 
+                    <li class="current nav_li1" channel="1">
+                        <a style="" href="" target="_blank">首页</a>
+                    </li> 
+                    <li class="nav_li1">
+                        <a class="nav_li1_a" href="" target="_blank">品牌折扣</a>
+                    </li> 
+                    <li class="nav_li1" channel="7">
+                        <a class="nav_li1_a" href="" target="_blank">9.9包邮</a>
+                    </li> 
+                    <li class="last nav_li1">
+                        <a class="nav_li1_a" href="" target="_blank">即将上线</a>
+                    </li> 
+                    <li class="nav_li1">
+                        <a class="nav_li1_a" href="" target="_blank" id="show-qcodes"> <em class="icon-normal icon-phone" id="new-phone"></em> 手机版 </a> 
+                        <div id="new-qcodes" class="code-tips" style="display: none;"> 
+                            <div class="code-box"> 
+                             <p class="code"></p> 
+                             <p class="txt" style="text-align:center;font-size: 14px">随时逛 及时抢</p> 
+                            </div> 
+                       </div> 
+                    </li> 
+                 </ul> 
+            </div> 
+        </div> 
+    </header>
+    <!-- 吸顶导航条 -->
+    <div class="xiding1">
+        
+            <ul class="xiding1_nav con">
+                <li class="xiding1_first"><a href="">今日上新</a></li>
+                <li><a class="" href="">女装</a></li>
+                <li><a class="" href="">男装</a></li>
+                <li><a class="" href="">鞋子</a></li>
+                <li><a class="" href="">箱包</a></li>
+                <li><a class="" href="">母婴</a></li>
+                <li><a class="active" href="">美妆</a></li>
+                <li><a class="" href="">居家</a></li>
+                <li><a class="" href="">家纺</a></li>
+                <li><a class="" href="">文体</a></li>
+                <li><a class="" href="">美食</a></li>
+                <li><a class="" href="">数码</a></li>
+                <li><a class="" href="">电器</a></li>
+                <li><a class="" href="">内衣</a></li>
+                <li><a class="" href="">配饰</a></li>
+                <li class="last"><a target="_blank" href="">[即将上线]</a></li>
+            </ul>
+    </div>
+    <!-- 中部 -->
+    <main id="body">
+        <div class="bodybox con">
+            <!-- <div class="toobar">价格排序:
+                <a href="#" class="sort-price">价格</a>
+            </div> -->
+            <div class="goodslist">
+                <ul class="goodslistul">
+                    
+                </ul>
+            </div>
+            
+            
+        </div>
+        
+    </main>
+    <!-- 尾部 -->
+    <footer id="foot">
+        <div class="footbox con">
+            <div class="footbox1">
+                <div class="foot_ma">
+                    <img src="../img/bottom_ma.png" alt="" />
+                    <p class="app-txt">随时逛&nbsp;及时抢</p>
+                </div>
+                <div class="foot-info">
+                    <ul class="info-ul">
+                        <li class="update">
+                            <p><strong>获取更新</strong></p>
+                            <p>iPhone/Android</p>
+                            <p>卷皮QQ空间</p>
+                            <p>卷皮新浪微博</p>
+                            <p>开放API</p>
+                        </li>
+                        <li class="update">
+                            <p><strong>商务合作</strong></p>
+                            <p>卖家免费报名</p>
+                            <p>商家入驻</p>
+                            <p>廉政邮箱</p>
+                            <p>开放平台</p>
+                        </li>
+                        <li class="update">
+                            <p><strong>公司信息</strong></p>
+                            <p>关于卷皮</p>
+                            <p>媒体报道</p>
+                        </li>
+                        <li class="info-last">
+                            <p><strong>帮助中心</strong></p>
+                            <p>新手上路</p>
+                            <p>网站地图</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="foot-kefu">
+                    <img src="../img/kefu.png" alt="" />
+                    <p class="kefup1">周一至周五</p>
+                    <p class="kefup2">9:00-18:00</p>
+                </div>
+
+            </div>
+            <div class="footbox2">
+                <ul>
+                    <li><a href="">友情链接：</a></li>
+                    <li><a href="">易登网</a></li>
+                    <li><a href="">品牌鞋</a></li>
+                    <li><a href="">乐蜂网优惠券</a></li>
+                    <li><a href="">普洱茶</a></li>
+                </ul>
+            </div>
+            <p class="ft-company">武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 | <a href="#" target="_blank">鄂公网安备42018502000390号</a> | 食品流通许可证 SP4201991510041888　　</p>
+            <p class="ft-company">Copyright © 2010 -2018 JuanPi.com All Rights Reserved</p>
+            <div class="foot-logo">
+                <img src="../img/foot-logo1.gif" alt="" />
+                <img src="../img/foot-logo2.gif" alt="" />
+                <img src="../img/foot-logo3.gif" alt="" />
+                <img src="../img/foot-logo4.png" alt="" />
+            </div>
+        </div>
+        
+    </footer>
+    
+    </body>
+</html>

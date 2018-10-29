@@ -5,7 +5,7 @@
         //前端请求数据
         $.ajax({
             type: "get",
-            url: "../api/goodslist_11.php",
+            url: "api/goodslist_11.php",
             async: true,
             success: function(str){
                 var res=str;
@@ -31,7 +31,7 @@
 
         $.ajax({
             type: "get",
-            url: "../api/goodslist_12.php",
+            url: "api/goodslist_12.php",
             async: true,
             success: function(str){
                 var res=str;
