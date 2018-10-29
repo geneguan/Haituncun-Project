@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-10-25 10:45:36
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-10-29 09:56:30
+* @Last Modified time: 2018-10-29 10:30:38
 */
 
 $(function(){
@@ -377,7 +377,7 @@ function Show(){}
         // 点击商品，跳转到详情页
         
         $('.goodslist1').on('click','li',function(e){
-            location.href='../html/details/index.html';
+            location.href='../details/index.html';
             var currentLi= $(this).attr('data-id'); 
             Cookie.set('id',currentLi,{path: '/'});
             console.log(currentLi);
@@ -385,7 +385,7 @@ function Show(){}
         });
 
         $('.goodslist2').on('click','li',function(e){
-            location.href='../html/details/index.html';
+            location.href='../details/index.html';
             var currentLi= $(this).attr('data-id');
             Cookie.set('id',currentLi,{path: '/'});
             console.log(currentLi);
